@@ -135,7 +135,7 @@ Enter creates it, `e` fixes a field, `c` cancels.
 
 ### Running in the background
 
-No hotkey, no keyboard capture, so this runs fine as a launchd agent.
+Also runs as a launchd agent.
 
 `~/Library/LaunchAgents/com.yourname.voicetox.plist`:
 
