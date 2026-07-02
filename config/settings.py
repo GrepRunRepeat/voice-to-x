@@ -16,7 +16,7 @@ PROJECT_ALIASES = {
     "data platform": "DATA",
     "data": "DATA",
 }
-DEFAULT_PROJECT_KEY = "LSE"  # fallback if nothing matches
+DEFAULT_PROJECT_KEY = "AUTH"  # fallback if nothing matches
 
 # ─── Local models ────────────────────────────────────────────────────────
 WHISPER_MODEL = "mlx-community/whisper-small.en-mlx"
