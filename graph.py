@@ -27,7 +27,7 @@ class TicketState(TypedDict, total=False):
     error: Optional[str]         # populated if any node fails
 
 
-# Nodes
+# --- Nodes ---
 
 def transcribe_node(state: TicketState) -> TicketState:
     print("[Agent 1] Transcribing locally...")
@@ -129,7 +129,7 @@ def create_note_node(state: TicketState) -> TicketState:
         return {**state, "error": str(e)}
 
 
-# Conditional routing
+# --- Conditional Routing ---
 
 def route_after_transcribe(state: TicketState) -> str:
     if state.get("error") == "empty_transcript":
@@ -145,7 +145,7 @@ def route_after_review(state: TicketState) -> str:
     return "note" if state["fields"].get("target") == "note" else "ticket"
 
 
-# Graph assembly
+# --- Graph assembly ---
 
 def build_graph():
     graph = StateGraph(TicketState)
