@@ -42,7 +42,7 @@ Rules:
   functionality, "Task" for anything else (chores, investigation, tech debt).
 - priority: infer from urgency language ("urgent", "blocking", "asap" -> High; no signal -> Medium).
 - Keep description factual, don't invent details not mentioned.
-- Never include the keywords wallace or grommet / grommit etc. in the description. They are reserved
+- Never include the keywords wallace or grommet / grommit etc. in the description. They are reserved!
 - Jira labels cannot have spaces!
 """
 
