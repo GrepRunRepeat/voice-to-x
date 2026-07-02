@@ -46,7 +46,7 @@ START -> transcribe -> structure -> review                        ├─► END
 ```
 
 `main.py` just starts the listener and hands audio to `ticket_graph.invoke(...)`. State lives
-in one `TicketState` dict; routing is conditional edges, not if/else scattered around.
+in one `TicketState` dict; routing is conditional edges.
 
 ---
 
