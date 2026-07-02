@@ -1,0 +1,7 @@
+mlx-whisper
+sounddevice
+numpy
+ollama
+requests
+langgraph
+typing_extensions

@@ -1,0 +1,35 @@
+# Virtual environments
+venv/
+jira-agent-env/
+env/
+.venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Environment variables / secrets
+.env
+.env.*
+*.local
+
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
