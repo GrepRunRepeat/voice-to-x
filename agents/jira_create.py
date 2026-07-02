@@ -11,10 +11,7 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from config.settings import JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN
 
-
-
 REQUEST_TIMEOUT_SECONDS = 15
-
 
 def clean_text(text: str) -> str:
     return (
@@ -25,12 +22,10 @@ def clean_text(text: str) -> str:
             .replace("—", "-")
     )
 
-
 def capitalize_first(text: str) -> str:
     """Uppercase just the first character, unlike str.capitalize() which also
     lowercases the rest of the string (mangling things like "API" -> "api")."""
     return text[0].upper() + text[1:] if text else text
-
 
 def create_jira_ticket(fields: dict) -> dict:
     required_env = {"JIRA_URL": JIRA_URL, "JIRA_EMAIL": JIRA_EMAIL, "JIRA_API_TOKEN": JIRA_API_TOKEN}
