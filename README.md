@@ -1,9 +1,9 @@
 ![Alt text](resources/1.png)
 # Wallace & Gromit
 
-Say "wallace" to start recording, "gromit" to stop. Whatever you said gets transcribed,
+Say "wallace" to start recording, "gromit" to stop. Whatever you say gets transcribed,
 structured, and — after you review it — created as a Jira ticket, a macOS Note, or
-routed to any other agent you plug in. One wake word; a local LLM decides which
+routed to any other agent you plug in. A local LLM decides which
 destination fits based on what you actually said. Jira and Notes are just the two
 built-in agents — the architecture supports adding as many as you like.
 
