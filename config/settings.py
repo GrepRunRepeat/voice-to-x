@@ -37,7 +37,7 @@ STOP_WORD = "gromit"      # say this to stop recording and send it to the pipeli
 # e.g. Whisper splitting "gromit" into two words like "grum it" or "grum et". Add more here
 # as you notice them; checked as plain substrings of the transcript, not fuzzy-matched.
 WAKE_WORD_ALIASES = []
-STOP_WORD_ALIASES = ["grum it", "grum et"]
+STOP_WORD_ALIASES = ["grum it", "grum et", "gromm et"]
 
 CHECK_INTERVAL_SECONDS = 1   # how often the listener polls for wake/stop words
 ROLLING_WINDOW_SECONDS = 4     # how much recent audio is checked each poll (needs enough
